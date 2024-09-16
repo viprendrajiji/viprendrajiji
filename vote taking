@@ -1,0 +1,19 @@
+age=int(input("enter your age"))
+bjp="bharat janta party"
+cnp="congress party"
+other="other party"
+
+
+if(age>=18):
+  vote=input("enter your party name 'bjp/cnp/others ")
+  print("you are eligible for vote")
+  if(vote =='bjp'):
+    print("your party name is : ",bjp)
+  elif(vote =='cnp'):
+   print("your party name is : ",cnp)
+  elif(vote=='others'):
+    print("your party name is : ",other)
+  else:
+    print('invalid party')
+else:
+  print("you are not eligible for vote")
