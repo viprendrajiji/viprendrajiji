@@ -1,0 +1,23 @@
+s=int(input("enter your starting number"))
+e=int(input("enter your last number"))
+u=int(input("enter your updation value"))
+
+
+choice=input("enter h for horizontal and v for vertical")
+choice2=input("enter your order f for forward or r for reverse")
+if(choice=='h'):
+  for i in range(s,e+1,u):
+   print(i,end=" ")
+elif(choice=='v'):
+  for i in range(s,e+1,u):
+    print(i)
+else:
+  print("invalid")
+
+if(choice2=='f'):
+  for i in range(s,e+1,u):
+   print(i)
+
+else:
+  for i in range(e+1,s,-u):
+   print(i)
